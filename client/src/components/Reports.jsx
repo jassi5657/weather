@@ -53,20 +53,20 @@ const Reports = () => {
   return (
     <div>
       <h1>User Weather Reports</h1>
-      <table>
+      <table style={{ borderCollapse: 'collapse', width: '100%' }}>
         <thead>
           <tr>
-            <th>City</th>
-            <th>Wind Speed</th>
-            <th>Temperature</th>
+            <th style={{ border: '1px solid black', padding: '8px' }}>City</th>
+            <th style={{ border: '1px solid black', padding: '8px' }}>Wind Speed</th>
+            <th style={{ border: '1px solid black', padding: '8px' }}>Temperature</th>
           </tr>
         </thead>
         <tbody>
           {reports.map((report, index) => (
             <tr key={index}>
-              <td>{report.city}</td>
-              <td>{report.windSpeed}</td>
-              <td>{report.temperature}</td>
+              <td style={{ border: '1px solid black', padding: '8px' }}>{report.city}</td>
+              <td style={{ border: '1px solid black', padding: '8px' }}>{report.windSpeed}</td>
+              <td style={{ border: '1px solid black', padding: '8px' }}>{report.temperature}</td>
             </tr>
           ))}
         </tbody>
