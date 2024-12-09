@@ -21,7 +21,7 @@ const Report = sequelize.define('Report', {
     allowNull: false,
   },
 }, {
-  timestamps: true, // Automatically manage createdAt and updatedAt fields
+  timestamps: true, 
 });
 
 module.exports = Report;
